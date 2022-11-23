@@ -1,20 +1,28 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
-const NavBar = () => {
+
+
+const NavBar = ({links, pages}) => {
     return (
         <nav>
+            {pages && (
             <ul>
                 <li>
-                    <NavLink to="/portfolio">Portfolio</NavLink>
+                    <NavLink to={`${links[0]}`}>{pages[0]}</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/about-us">About Us</NavLink>
+                    <NavLink to={`${links[1]}`}>{pages[1]}</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/contact">Contact</NavLink>
+                    <NavLink to={`${links[2]}`}>{pages[2]}</NavLink>
                 </li>
+                <li>
+                    <NavLink to={`${links[3]}`}>{pages[3]}</NavLink>
+                </li>
+              
             </ul>
+            )}
         </nav>
     )
 }

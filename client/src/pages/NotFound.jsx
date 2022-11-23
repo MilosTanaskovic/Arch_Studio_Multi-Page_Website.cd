@@ -1,5 +1,5 @@
 import React from 'react'
-import { Layout } from '.'
+import { Layout } from '../templates';
 
 const NotFound = () => {
     return (
