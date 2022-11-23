@@ -1,8 +1,27 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect} from 'react';
+import styled from 'styled-components';
+
 import { client } from '../../particles/client';
 import { headerQuery } from '../../particles/utils/data';
+import { device } from '../../particles/utils/devices';
 import { Logo } from '../atoms'
 import { NavBar } from '../moleculs'
+
+const HeaderContainer = styled.header`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 32px;
+
+    @media ${device.tablet} {
+        margin: 56px 0px;
+    }
+
+
+
+`;
 
 const Header = () => {
     const [header, setHeader] = useState([]);
@@ -21,13 +40,13 @@ const Header = () => {
     console.log('Header data', header);
     console.log('Logo data', logo);
     return (
-        <header>
+        <HeaderContainer>
             <Logo logo={logo && logo} />
             <NavBar 
                 links={link && link}
                 pages={pageName && pageName}
             />
-        </header>
+        </HeaderContainer>
     )
 }
 
