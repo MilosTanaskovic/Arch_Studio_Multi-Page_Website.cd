@@ -24,20 +24,20 @@ const font = {
         letterSpacing: '-2px',
     },
     headingXL: {
-        fontSize: '250px',
+        fontSize: '14vw', //250px
         fontWeight: 'bold',
         lineHeight: '200px',
         letterSpacing: '-5px',
     },
 }
 
-export const fontFanily = {
+export const fontFamily = {
     leagueSpartan: 'League Spartan'
 }
 
 
 export const fontSize = {
-    bodySize: `${font.body.fontSize}`,
+    body: `${font.body.fontSize}`,
     headingS: `${font.headingS.fontSize}`,
     headingM: `${font.headingM.fontSize}`,
     headingL: `${font.headingL.fontSize}`,
@@ -45,7 +45,7 @@ export const fontSize = {
 }
 
 export const fontWeight = {
-    bodySize: `${font.body.fontWeight}`,
+    body: `${font.body.fontWeight}`,
     headingS: `${font.headingS.fontWeight}`,
     headingM: `${font.headingM.fontWeight}`,
     headingL: `${font.headingL.fontWeight}`,
@@ -53,7 +53,7 @@ export const fontWeight = {
 }
 
 export const lineHeight = {
-    bodySize: `${font.body.lineHeight}`,
+    body: `${font.body.lineHeight}`,
     headingS: `${font.headingS.lineHeight}`,
     headingM: `${font.headingM.lineHeight}`,
     headingL: `${font.headingL.lineHeight}`,
@@ -61,7 +61,7 @@ export const lineHeight = {
 }
 
 export const letterSpacing = {
-    bodySize: `${font.body.letterSpacing}`,
+    body: `${font.body.letterSpacing}`,
     headingS: `${font.headingS.letterSpacing}`,
     headingM: `${font.headingM.letterSpacing}`,
     headingL: `${font.headingL.letterSpacing}`,
