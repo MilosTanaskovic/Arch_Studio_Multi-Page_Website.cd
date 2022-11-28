@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Footer } from '../components/organisms';
 
 import Header from '../components/organisms/Header'
 import { device } from '../particles/utils/devices';
@@ -35,13 +36,17 @@ const Layout = ({children}) => {
     return (
         <MainContainer>
             {/** Header */}
-            <Header />
+            <header>
+                <Header />
+            </header>
             {/** Main */}
             <main>
                 {children}
             </main>
             {/** Footer */}
-            Footer
+            <footer>
+                <Footer />
+            </footer>
         </MainContainer>
     )
 }

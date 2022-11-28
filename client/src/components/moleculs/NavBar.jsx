@@ -47,7 +47,7 @@ const LiItem = styled.li`
 `;
 
 
-const NavBar = ({links, pages}) => {
+const NavBar = ({links, pages, p=0, bgColor='inherit'}) => {
     const [isActiveNav, setIsActiveNav] = useState(false);
     return (
         <>     

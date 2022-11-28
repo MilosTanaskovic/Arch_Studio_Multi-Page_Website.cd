@@ -1,8 +1,9 @@
 import React from 'react';
+import { Logo } from '../components/atoms';
 import { CTAButton } from '../components/atoms/buttons';
-import { Body, HeadingL, HeadingM, HeadingXL } from '../components/atoms/typography';
-import { TimberBoxImage, TimberBoxText } from '../components/moleculs';
-import { Banner, CTA, Timber } from '../components/organisms';
+import { Body, HeadingL, HeadingM, HeadingS, HeadingXL } from '../components/atoms/typography';
+import { Product, TimberBoxImage, TimberBoxText } from '../components/moleculs';
+import { Banner, CTA, Footer, Products, Timber } from '../components/organisms';
 import { Layout } from '../templates';
 
 const Home = () => {
@@ -82,17 +83,67 @@ const Home = () => {
                 </CTAButton>
             </Banner>
             {/** CTA Section (Fatuted)*/}
-            <CTA >
+            <CTA>
                 <HeadingM>Featired</HeadingM>
                 <CTAButton
                     type={'button'}
                 >
-                    See All
+                    <Body 
+                        whiteColor
+                    >
+                        See All
+                    </Body>
                 </CTAButton>
             </CTA>
             {/** Products Section(Prosucts) */}
+            <Products>
+                <Product
+                    bgImage={'https://s3.us-east-1.amazonaws.com/sectigo-sites-web/global/images/Sectigo/blog/Website-Monitoring-6-3-21-1.jpeg'}
+                >
+                    <HeadingS
+                        whiteColor
+                    >
+                        Project One
+                    </HeadingS>
+                    <Body
+                        whiteColor
+                    >
+                        Description
+                    </Body>
+                </Product>
 
-            {/** Footer Section (Footer) */}
+                <Product
+                    bgImage={'https://s3.us-east-1.amazonaws.com/sectigo-sites-web/global/images/Sectigo/blog/Website-Monitoring-6-3-21-1.jpeg'}
+                >
+                    <HeadingS
+                        whiteColor
+                    >
+                        Project One
+                    </HeadingS>
+                    <Body
+                        whiteColor
+                    >
+                        Description
+                    </Body>
+                </Product>
+
+                <Product
+                bgImage={'https://s3.us-east-1.amazonaws.com/sectigo-sites-web/global/images/Sectigo/blog/Website-Monitoring-6-3-21-1.jpeg'}
+                >
+                    <HeadingS
+                        whiteColor
+                    >
+                        Project One
+                    </HeadingS>
+                    <Body
+                        whiteColor
+                    >
+                        Description
+                    </Body>
+                </Product>
+
+                
+            </Products>
         </Layout>
     )
 }

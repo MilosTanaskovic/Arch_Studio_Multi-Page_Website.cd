@@ -2,12 +2,13 @@ import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 
 import { client } from '../../particles/client';
+import { useStateContext } from '../../particles/context/StateContext';
 import { headerQuery } from '../../particles/utils/data';
 import { device } from '../../particles/utils/devices';
 import { Logo } from '../atoms'
 import { NavBar } from '../moleculs'
 
-const HeaderContainer = styled.header`
+const HeaderContainer = styled.section`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -24,18 +25,9 @@ const HeaderContainer = styled.header`
 `;
 
 const Header = () => {
-    const [header, setHeader] = useState([]);
+    const {header} = useStateContext();
 
     const {logo, link, pageName} = header;
-
-    useEffect(() => {
-      const query = headerQuery();
-
-      client.fetch(query)
-        .then((data) => {
-            setHeader(data[0]);
-        })
-    }, []);
 
     console.log('Header data', header);
     console.log('Logo data', logo);
