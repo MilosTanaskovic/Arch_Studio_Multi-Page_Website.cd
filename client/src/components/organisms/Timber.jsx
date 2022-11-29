@@ -12,7 +12,7 @@ const TimberContainer = styled.section`
 const Box = styled.div`
     display: flex;
     flex-direction: ${props => (props.direction)};
-    align-items: center;
+    align-items: ${props => (props.alignItems)};
     justify-content: center;
     text-align: start;
     gap: 22px;
@@ -37,11 +37,12 @@ const Box = styled.div`
     }
 `;
 {/** Timber is unic section/wrapper/component, use where you need it */}
-const Timber = ({children, direction = 'column', position='inherit', pl=[0, 0, 0]}) => {
+const Timber = ({children, direction = 'column', alignItems = 'center', position='inherit', pl=[0, 0, 0]}) => {
     return (
         <TimberContainer>
             <Box
                 direction={direction}
+                alignItems={alignItems}
                 pl={pl}
                 position={position}
             >

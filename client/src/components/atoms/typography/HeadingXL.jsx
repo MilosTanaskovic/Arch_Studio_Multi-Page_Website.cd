@@ -20,7 +20,7 @@ const HeaderBox = styled.h1`
     right: ${props => (props.right)}px;
 `;
 
-const HeadingXL = ({children, position='inherit', top=0, left=0, right=0}) => {
+const HeadingXL = ({children, position='inherit', top, left, right}) => {
     return (
         <HeaderBox
             position={position}

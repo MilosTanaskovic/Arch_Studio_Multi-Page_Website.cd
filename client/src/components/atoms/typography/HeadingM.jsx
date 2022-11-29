@@ -13,11 +13,14 @@ const HeaderBox = styled.h3`
     line-height: ${lineHeight.headingM};
 
     color: ${props => (props.whiteColor ? 'white' : color.veryDarkBlue )};
+
+    flex: ${props => (props.flex)};
 `;
 
-const HeadingM = ({children, whiteColor = false}) => {
+const HeadingM = ({children, flex, whiteColor = false}) => {
     return (
         <HeaderBox
+            flex={flex}
             whiteColor={whiteColor}
         >
             {children}
