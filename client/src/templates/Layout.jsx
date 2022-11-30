@@ -12,8 +12,6 @@ const MainContainer = styled.div`
     height: 100%;
     margin: auto;
 
-    background-color: silver;
-
     @media ${device.mobileL} {
         max-width: 500px;
     }

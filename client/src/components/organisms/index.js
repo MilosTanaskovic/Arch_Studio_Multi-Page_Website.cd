@@ -5,4 +5,5 @@ export {default as CTA} from './CTA';
 export {default as Products} from './Products';
 export {default as Employees} from './Employees';
 export {default as EmployeesTumb} from './EmployeesTumb';
+export {default as ContactInfo} from './ContactInfo';
 export {default as Footer} from './Footer';

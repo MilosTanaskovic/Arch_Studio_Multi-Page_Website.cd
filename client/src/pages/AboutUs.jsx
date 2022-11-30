@@ -19,7 +19,7 @@ const AboutUs = () => {
                     top={30}
                     right={0}
                 >
-                    Welcome
+                    About Us
                 </HeadingXL>
 
                 <TimberBoxImage
