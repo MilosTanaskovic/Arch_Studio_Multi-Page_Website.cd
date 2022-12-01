@@ -30,14 +30,23 @@ const ButtonBox = styled.button`
     &:active {
         background: ${color.lightGrey};
     }
+
+    // Disabled
+    &:disabled,
+    &:disabled:hover,
+    &:disabled:active{
+        background: ${color.darkGrey};
+        cursor: not-allowed;
+    }
 `;
 
-const CTAButton = ({children, type, handleCTA, classes}) => {
+const CTAButton = ({children, type, handleCTA, classes, disabled}) => {
     return (
         <ButtonBox
             type={type}
             onClick={handleCTA}
             className={classes}
+            disabled={disabled}
         >
             {children}
             <img src={ctaArrowRight} alt="call to action arrow"/>

@@ -88,10 +88,10 @@ const Contact = () => {
 
             {/** Page Section (Contact Form) */}
             <ContactInfo>
-                <HeadingM>
+                <HeadingM flex={1}>
                     Contact with us
                 </HeadingM>
-                <Form />
+                <Form flex={2} />
             </ContactInfo>
         </Layout>
     )
