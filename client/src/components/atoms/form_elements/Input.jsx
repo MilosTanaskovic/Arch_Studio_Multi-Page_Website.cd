@@ -1,9 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Divider } from '..';
+import { Body } from '../typography';
 
 const InputContainer = styled.div`
     width: 100%;
+    position: relative;
+
+    padding-top: 41px;
 
     & label {
         position: absolute;
@@ -11,15 +15,32 @@ const InputContainer = styled.div`
     }
     & input {
         border: none;
+        height: 20px;
 
         width: inherit;
+
+        &::placeholder {
+            color: ${props => ((props.nameIsValid || props.emailIsValid) ? '#DF5656' : '#C8CCD8')};
+        }
     }
+
+    & p {
+        position: absolute;
+        top: 20px;
+        right: 0px;
+        color: #DF5656;
+    }
+
+
 `;
 
 // inputs type: name, email...
-const Input = ({labelText, type, id, value, handleChangeInputValue, handleBlurInputValue}) => {
+const Input = ({labelText, type, id, value, handleChangeInputValue, handleBlurInputValue, nameIsValid, emailIsValid}) => {
     return (
-        <InputContainer>
+        <InputContainer
+            nameIsValid={nameIsValid}
+            emailIsValid={emailIsValid}
+        >
             {/*<label htmlFor={id}> {labelText} </label>*/}
             <input 
                 type={type}
@@ -29,7 +50,11 @@ const Input = ({labelText, type, id, value, handleChangeInputValue, handleBlurIn
                 onChange={handleChangeInputValue}
                 onBlur={handleBlurInputValue}
             />
-            <Divider />
+            {(nameIsValid || emailIsValid) && <Body>Can't be empty</Body>} 
+           
+            <Divider 
+                fieldIsValid={[nameIsValid,emailIsValid]} 
+            />
         </InputContainer>
     )
 }

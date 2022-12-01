@@ -93,8 +93,9 @@ const Form = ({flex}) => {
                 handleChangeInputValue={handleChangeNameValue}
                 handleBlurInputValue={handleBlurInputValue}
                 labelText={'Name'}
+                nameIsValid={valueIsValid.name}
             />
-            {valueIsValid.name && <p style={{color: 'red'}}>Can't be empty</p>}
+            {/*{valueIsValid.name && <p style={{color: 'red'}}>Can't be empty</p>}*/}
             <Input 
                 type={'email'}
                 id={'email'}
@@ -102,16 +103,18 @@ const Form = ({flex}) => {
                 handleChangeInputValue={handleChangeEmailValue}
                 handleBlurInputValue={handleBlurInputValue}
                 labelText={'Email'}
+                emailIsValid={valueIsValid.email}
             />
-            {valueIsValid.email && <p style={{color: 'red'}}>Can't be empty</p>}
+            
             <Textarea 
                 id={'message'}
                 value={enteredMessage}
                 handleChangeTxtareaValue={handleChangeMessageValue}
                 handleBlurInputValue={handleBlurInputValue}
                 labelText={'Message'}
+                messageIsValid={valueIsValid.message}
             />
-            {valueIsValid.message && <p style={{color: 'red'}}>Can't be empty</p>}
+            
             <CTAButton disabled={!formIsValid} />
         </FormConatiner>
     )

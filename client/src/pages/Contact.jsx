@@ -89,7 +89,7 @@ const Contact = () => {
             {/** Page Section (Contact Form) */}
             <ContactInfo>
                 <HeadingM flex={1}>
-                    Contact with us
+                    Connect with us
                 </HeadingM>
                 <Form flex={2} />
             </ContactInfo>
