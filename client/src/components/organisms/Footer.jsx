@@ -67,13 +67,13 @@ const BtnBox = styled.span`
 const Footer = () => {
     const {header} = useStateContext();
 
-    const {logo, link, pageName} = header;
+    const {logoWhite, link, pageName} = header;
     return (
         <FooterContainer>
             <Box>
                 <LogoBox>
                     <Logo
-                        logo={logo && logo} 
+                        logo={logoWhite && logoWhite} 
                     />
                 </LogoBox>
                 <NavBarBox>

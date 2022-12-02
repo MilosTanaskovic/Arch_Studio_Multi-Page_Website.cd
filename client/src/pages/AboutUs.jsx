@@ -26,7 +26,7 @@ const AboutUs = () => {
                     flex={1}
                     notVisibleMobile={false}
                 >
-                    <img src={'https://c8.alamy.com/comp/HN7DBW/boys-and-girls-with-the-word-welcome-HN7DBW.jpg'} alt="welcome to Arch Studio" />
+                    <img height="720px" src={'https://www.appnwebtechnologies.com/public/images/section/1622706126bannerwebpage.png'} alt="welcome to Arch Studio" />
                 </TimberBoxImage>
                 <TimberBoxText
                     flex={1}
@@ -67,7 +67,7 @@ const AboutUs = () => {
                     flex={1}
                     notVisibleMobile={false}
                 >
-                    <img src={'https://c8.alamy.com/comp/HN7DBW/boys-and-girls-with-the-word-welcome-HN7DBW.jpg'} alt="welcome to Arch Studio" />
+                    <img src={'https://lrt.com.pk/wp-content/uploads/2021/12/macbook1.png'} alt="welcome to Arch Studio" />
                 </TimberBoxImage>
                 
             </Timber>
@@ -82,39 +82,39 @@ const AboutUs = () => {
                     flex={2}
                 >
                     <Employe>
-                        <img width="150" src={'https://c8.alamy.com/comp/HN7DBW/boys-and-girls-with-the-word-welcome-HN7DBW.jpg'} alt="" />
+                        <img width='100%' src={'https://cdn0.iconfinder.com/data/icons/virus-and-hacker/512/security-computer-internet-technology-512.png'} alt="" />
                         <HeadingS>
-                            Milos Tanaskovic
+                            Jake Richards
                         </HeadingS>
                         <Body>
-                            Senior JS/React Engeneer
+                        Chief Architect
                         </Body>
                     </Employe>
                     <Employe>
-                        <img width="150" src={'https://c8.alamy.com/comp/HN7DBW/boys-and-girls-with-the-word-welcome-HN7DBW.jpg'} alt="" />
+                        <img width='100%' src={'https://img.freepik.com/premium-vector/african-american-man-avatar-portrait-young-guy-vector-illustration-face_217290-910.jpg'} alt="" />
                         <HeadingS>
-                            Milos Tanaskovic
+                        Thompson Smith
                         </HeadingS>
                         <Body>
-                            Senior JS/React Engeneer
+                        Head of Finance
                         </Body>
                     </Employe>
                     <Employe>
-                        <img width="150" src={'https://c8.alamy.com/comp/HN7DBW/boys-and-girls-with-the-word-welcome-HN7DBW.jpg'} alt="" />
+                        <img width='100%' src={'https://cdn4.iconfinder.com/data/icons/people-avatar-1-2/512/7-512.png'} alt="" />
                         <HeadingS>
-                            Milos Tanaskovic
+                        Jackson Rourke
                         </HeadingS>
                         <Body>
-                            Senior JS/React Engeneer
+                        Lead Designer
                         </Body>
                     </Employe>
                     <Employe>
-                        <img width="150" src={'https://c8.alamy.com/comp/HN7DBW/boys-and-girls-with-the-word-welcome-HN7DBW.jpg'} alt="" />
+                        <img width='100%' src={'https://cdn-icons-png.flaticon.com/512/3749/3749780.png'} alt="" />
                         <HeadingS>
-                            Milos Tanaskovic
+                        Maria Simpson
                         </HeadingS>
                         <Body>
-                            Senior JS/React Engeneer
+                        Senior Architect
                         </Body>
                     </Employe>
                 </EmployeesTumb>

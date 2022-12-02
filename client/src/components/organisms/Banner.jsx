@@ -12,6 +12,8 @@ const BannerContainer = styled.section`
     min-height: 560px;
     max-height: 720px;
 
+    height: ${props => (props.height)}px;
+
     background: url(${props => props.bgImage}) no-repeat center;
     /* background-size: contain; */
 `
@@ -35,11 +37,12 @@ const Box = styled.div`
     }
 `
 
-const Banner = ({children, bgColor, bgImage}) => {
+const Banner = ({children, bgColor, bgImage, height}) => {
     return (
         <BannerContainer
             bgColor={bgColor}
             bgImage={bgImage}
+            height={height}
         >
             <Box>
                 {children}

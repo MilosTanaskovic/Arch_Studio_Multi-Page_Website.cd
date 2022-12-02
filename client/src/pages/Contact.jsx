@@ -26,7 +26,7 @@ const Contact = () => {
                     flex={1}
                     notVisibleMobile={false}
                 >
-                    <img src={'https://c8.alamy.com/comp/HN7DBW/boys-and-girls-with-the-word-welcome-HN7DBW.jpg'} alt="welcome to Arch Studio" />
+                    <img width="635px" height="720px" src={'https://purepng.com/public/uploads/large/purepng.com-black-phonephoneconversationwire-communicationtelephonecablestransmissionblack-1421526587344olvcv.png'} alt="welcome to Arch Studio" />
                 </TimberBoxImage>
                 <TimberBoxText
                     flex={1}
@@ -46,10 +46,10 @@ const Contact = () => {
                 position={'relative'}
                 alignItems={'start'}
             >
-                <HeadingM >
+                <HeadingM flex={1}>
                     Contact Details
                 </HeadingM>
-                <TimberBoxText>
+                <TimberBoxText flex={1}>
                     <Body>
                     Main Office
                     </Body>
@@ -66,7 +66,7 @@ const Contact = () => {
                         </Body>
                     </CTAButton>
                 </TimberBoxText>
-                <TimberBoxText>
+                <TimberBoxText flex={1}>
                     <Body>
                     Main Office
                     </Body>

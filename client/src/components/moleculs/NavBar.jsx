@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import styled from 'styled-components';
 import { color } from '../../particles/utils/colors';
 import { device } from '../../particles/utils/devices';
@@ -29,23 +29,31 @@ const UlBox = styled.ul`
 
 const LiItem = styled.li`
     padding: 8px;
-
     
     & a {
         text-decoration: none;
 
-        & p {
-            &:hover,
-            &:active {
-                color: ${color.veryDarkBlue};
-            }
+        &:hover,
+        &:active {
+            color: ${color.veryDarkBlue};
+
         }
     }
+    
     @media ${device.tablet} {
         padding: 12px;
     }
 `;
 
+let activeStyle = {
+    color: '#1B1D23',
+    paddingBottom: '2px',
+    borderBottom: '1px solid #1B1D23',
+}
+
+let notActiveStyle = {
+    color: '#7D828F',
+}
 
 const NavBar = ({links, pages, p=0, bgColor='inherit'}) => {
     const [isActiveNav, setIsActiveNav] = useState(false);
@@ -64,25 +72,34 @@ const NavBar = ({links, pages, p=0, bgColor='inherit'}) => {
                 </NavLink>
             </LiItem>*/}
             <LiItem>
-                <NavLink to={`${links[1]}`}> 
-                    <Body>
-                        {pages[1]}
-                    </Body>
-                </NavLink>
+                <Body>
+                    <NavLink 
+                        style={({isActive}) => isActive ? activeStyle : notActiveStyle} 
+                        to={`${links[1]}`}
+                    >     
+                        {pages[1]}             
+                    </NavLink>
+                </Body>
             </LiItem>
             <LiItem>
-                <NavLink to={`${links[2]}`}>
-                    <Body>
-                        {pages[2]}
-                    </Body>
-                </NavLink>
+                <Body>
+                    <NavLink 
+                        style={({isActive}) => isActive ? activeStyle : notActiveStyle}
+                        to={`${links[2]}`}
+                    > 
+                        {pages[2]}    
+                    </NavLink>
+                </Body>
             </LiItem>
             <LiItem>
-                <NavLink to={`${links[3]}`}>
-                    <Body>
+                <Body>
+                    <NavLink 
+                        style={({isActive}) => isActive ? activeStyle : notActiveStyle}
+                        to={`${links[3]}`}
+                    >
                         {pages[3]}
-                    </Body>
-                </NavLink>
+                    </NavLink>
+                </Body>
             </LiItem>
         
         </UlBox>

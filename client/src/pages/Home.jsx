@@ -11,7 +11,8 @@ const Home = () => {
         <Layout>
             {/** Banner Section (Hero) */}
             <Banner
-              bgImage={'https://s3.us-east-1.amazonaws.com/sectigo-sites-web/global/images/Sectigo/blog/Website-Monitoring-6-3-21-1.jpeg'}
+              bgImage={'https://res.cloudinary.com/sagacity/image/upload/c_crop,h_749,w_1000,x_0,y_0/c_limit,f_auto,fl_lossy,q_80,w_1080/Colonial_Heights_Residence_hrmww7.jpg'}
+                height={720}
             >
                 <HeadingL 
                     whiteColor
@@ -38,6 +39,7 @@ const Home = () => {
                 <HeadingXL
                     position={'absolute'}
                     top={-170}
+                    left={0}
                 >
                     Welcome
                 </HeadingXL>
@@ -63,13 +65,13 @@ const Home = () => {
                     flex={1}
                     notVisibleMobile={true}
                 >
-                    <img src={'https://c8.alamy.com/comp/HN7DBW/boys-and-girls-with-the-word-welcome-HN7DBW.jpg'} alt="welcome to Arch Studio" />
+                    <img src={'https://static.wikia.nocookie.net/poohadventures/images/5/59/Shinkai_haru3.png'} alt="welcome to Arch Studio" />
                 </TimberBoxImage>
                 
             </Timber>
             {/** Banner Section (AboutUs)*/}
             <Banner
-              bgImage={'https://s3.us-east-1.amazonaws.com/sectigo-sites-web/global/images/Sectigo/blog/Website-Monitoring-6-3-21-1.jpeg'}
+              bgImage={'https://mediaproxy.salon.com/width/1200/https://media.salon.com/2021/07/drinking-coffee-at-a-cafe-0722211.jpg'}
             >
                 <HeadingL 
                     whiteColor
@@ -98,7 +100,7 @@ const Home = () => {
             {/** Products Section(Prosucts) */}
             <Products>
                 <Product
-                    bgImage={'https://s3.us-east-1.amazonaws.com/sectigo-sites-web/global/images/Sectigo/blog/Website-Monitoring-6-3-21-1.jpeg'}
+                    bgImage={'https://e1.pxfuel.com/desktop-wallpaper/996/817/desktop-wallpaper-buildings-architecture-glass-dark-neon-3d-black-architecture-phone-thumbnail.jpg'}
                 >
                     <HeadingS
                         whiteColor
@@ -113,7 +115,7 @@ const Home = () => {
                 </Product>
 
                 <Product
-                    bgImage={'https://s3.us-east-1.amazonaws.com/sectigo-sites-web/global/images/Sectigo/blog/Website-Monitoring-6-3-21-1.jpeg'}
+                    bgImage={'https://www.homeanddesign.com/wp-content/uploads/2019/06/MarkS_1.jpg'}
                 >
                     <HeadingS
                         whiteColor
@@ -128,7 +130,7 @@ const Home = () => {
                 </Product>
 
                 <Product
-                bgImage={'https://s3.us-east-1.amazonaws.com/sectigo-sites-web/global/images/Sectigo/blog/Website-Monitoring-6-3-21-1.jpeg'}
+                bgImage={'https://www.busyboo.com/wp-content/uploads/small-house-design-eaves-2.jpg'}
                 >
                     <HeadingS
                         whiteColor

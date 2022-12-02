@@ -12,6 +12,14 @@ export default {
             }
         },
         {
+            title: "Logo White",
+            name: "logoWhite",
+            type: "image",
+            options: {
+                hotspot: true,
+            }
+        },
+        {
             title: "Page Name",
             name: "pageName",
             type: "array",
